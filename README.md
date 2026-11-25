@@ -1,4 +1,4 @@
-## Huffman codes
+## Huffman coding
 
 My simple, naive implementation of Huffman coding, made for educational purposes.\
 Run `make run` to try it.
