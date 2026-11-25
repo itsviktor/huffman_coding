@@ -464,7 +464,7 @@ int main(void) {
 	huffman_decoded decoded = huffman_decode(encoded.encoded, encoded.encoded_size, encoded.code_length, encoded.original_size);
 	printf("decoded size: %zu, error: %d\n", decoded.decoded_size, decoded.error_code);
 
-	FILE *f_main2 = fopen("main2", "wab");
+	FILE *f_main2 = fopen("main2", "ab");
 	if (!f_main2) {
 		fprintf(stderr, "failed to create file main2: %s\n", strerror(errno));
 		return 1;
